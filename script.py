@@ -2,7 +2,6 @@ from os import *
 from os.path import isfile
 from subprocess import *
 from shutil import *
-from emoji import emojize
 from glob import *
 def orgo_create(main_path,folder,*extensions):
     cr_path=main_path+"\\"+folder
@@ -17,7 +16,7 @@ def orgo_create(main_path,folder,*extensions):
                 move(file,cr_path)
 command=["ls"]
 result=run(command,stdout=PIPE,stderr=PIPE,universal_newlines=True)
-print(f"Hi I Am Orgo{emojize(':grinning_face_with_big_eyes:')} Your Directories Organizer Bot")
+print(f"Hi I Am Orgo Your Directories Organizer Bot")
 print("I can move your files and folders, organize them and if you want i can delete them")
 print("Please Select Any One Option Below")
 print("1.Move Your Files And Folders In Your Current Directory To Your Required Folder")
