@@ -14,8 +14,6 @@ def orgo_create(main_path,folder,*extensions):
                 print("Folder Exists.Adding Files in here")
             for file in ext_req_files:
                 move(file,cr_path)
-command=["ls"]
-result=run(command,stdout=PIPE,stderr=PIPE,universal_newlines=True)
 print(f"Hi I Am Orgo Your Directories Organizer Bot")
 print("I can move your files and folders, organize them and if you want i can delete them")
 print("Please Select Any One Option Below")
