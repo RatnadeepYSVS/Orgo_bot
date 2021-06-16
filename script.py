@@ -34,20 +34,17 @@ if option==1:
         except FileNotFoundError:
             print("Please Provide A Valid File Or Folder")
 elif option==2:
-    if any(".txt" or ".docx" or ".doc" or ".pptx" in i for i in dirs):
-        orgo_create(main_path,"Text_Files",".txt")
-    if any(".docx" or ".doc" or ".pptx" in i for i in dirs):
-        orgo_create(main_path,"Documents",".doc",".docx",".pptx")
-    if any(".xlsx" or ".csv" in i for i in dirs):
-        orgo_create(main_path,"CSV_Files",".xlsx",".csv")
-    if any(".mp3" or ".mp4" or ".mkv" in i for i in dirs):
-        orgo_create(main_path,"Media",".mp3",".mp4",".mkv")
-    if any(".pdf" in i for i in dirs):
-        orgo_create(main_path,"PDF_Files",".pdf")
-    if any(".jfif" or ".jpeg" or ".jpg" or ".png" in i for i in dirs):
-        orgo_create(main_path,"Images",".jfif",".jpeg",".jpg",".png")
-    if any(".lnk" or ".exe" in i for i in dirs):
-        orgo_create(main_path,"Applications",".lnk",".exe")
+    orgo_create(main_path,"Text_Files",".txt")
+    orgo_create(main_path,"Documents",".doc",".docx",".pptx")
+    orgo_create(main_path,"CSV_Files",".xlsx",".csv")
+    orgo_create(main_path,"Media",".mp3",".mp4",".mkv")
+    orgo_create(main_path,"PDF_Files",".pdf")
+    orgo_create(main_path,"Images",".jfif",".jpeg",".jpg",".png",".svg",".psd")
+    orgo_create(main_path,"Applications",".lnk",".exe")
+    orgo_create(main_path,"Torrents",".torrent")
+    orgo_create(main_path,"HTML_AND_CSS",".html",".css",".ejs")
+    orgo_create(main_path,"PythonCodes",".py",".pkl",".ipynb")
+    orgo_create(main_path,"Zipped",".zip",".rar")
 elif option==3:
     files_to_remove=input("Enter Files and folders u want to remove ").split()
     for i in files_to_remove:
